@@ -1,0 +1,18 @@
+File descriptions
+Makefile is used to build projects by executing other make files in c directory and fortran directory
+  To build both programs, type "make all"
+  To build c program, type "make c"
+  To build fortran program, type "make fortran"
+gplot is the script used by gnuplot to create png files
+  To make png files from program outputs, type "make figures"
+input.dat is a sample script used for project report
+c/update.h contains the header for update.c functions
+c/update.c contains the source code for handling arrays, simulation and updating particles
+c/io.h contains the header for io.c functions
+c/io.c contains the source code for reading input and output results
+c/main.c contains the source code for the main program
+c/Makefile contains the script to be used by the Makefile in parent directory
+fortran/io.f90 contains the module for reading input and output results
+fortran/update.f90 contains the module for simulation and updating particles
+fortran/main.f90 contains the source code for the main program
+fortran/Makefile contains the script to be used by the Makefile in parent directory

@@ -1,0 +1,6 @@
+set terminal png medium 
+set output output_file 
+set view map
+set pm3d interpolate 50,50
+set title sprintf("Heat Snapshot at Time %d", time)
+splot input_file using 1:2:3 with pm3d
